@@ -6,7 +6,8 @@ namespace PPE4GSB.Classes
 {
     public class GestPrescription
     {
-        public List<Medicaments> lesMedicaments { get; set; }
-        public List<Individu_type> lesIndividus { get; set; }
+        public Medicaments leMedicament { get; set; }
+        public Individu_type lIndividu { get; set; }
+        public Dosage leDosage { get; set; }
     }
 }

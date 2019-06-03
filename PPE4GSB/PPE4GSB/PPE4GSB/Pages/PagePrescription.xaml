@@ -5,8 +5,12 @@
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Page des prescriptions"
-                VerticalOptions="CenterAndExpand" 
+                VerticalOptions="Start" 
                 HorizontalOptions="CenterAndExpand" />
+            <Picker SelectedIndexChanged="pkMedicaments_SelectedIndexChanged" x:Name="pkMedicaments" Title="Medicaments"></Picker>
+            <Picker SelectedIndexChanged="pkDosage_SelectedIndexChanged" x:Name="pkDosage" Title="Dosages"></Picker>
+            <Picker SelectedIndexChanged="pkIndividu_SelectedIndexChanged" x:Name="pkIndividu" Title="Type d'indivudu concerné"></Picker>
+            <Button Text="Valider la prescription" x:Name="BtnPrescription" Clicked="BtnPrescription_Clicked"></Button>
             <Button Text="Retour accueil" x:Name="BtnAccueil" Clicked="BtnAccueil_Clicked" ></Button>
         </StackLayout>
     </ContentPage.Content>
